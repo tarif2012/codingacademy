@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(codeimage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 91vh;
+}
+
+.header {
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    background-color: rgba(37, 142, 142, 0.059);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px;
+}
+
+.logo {
+    width: 400px;
+    cursor: pointer;
+}
+
+.header ul {
+    float: right;
+}
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+.header ul li a:hover{
+    background-color: #0190DF;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    height: 55%;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.col1 {
+    flex-basis: 50%;
+}
+
+.col1 h1 {
+    color: aliceblue;
+    font-size: 80px;
+}
+.highlight {
+    color: #0190DF;
+}
+
+.col1 p {
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.bottom{
+    background-color: #0190DF;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.text{
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+.col2 {
+    flex-basis: 30%;
+    background-color: rgba(214, 232, 232, 0.059);
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-top: 100px;
+    padding: 30px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: aliceblue;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    max-width: 360px;
+    border-radius: 20px;
+}
+.form input{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.btn
+{
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #0190DF;
+    cursor: pointer;
+    font-weight: bold;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+.btn1
+{
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #0190DF;
+    cursor: pointer;
+    font-weight: bold;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+.form .message a{
+    text-decoration: none;
+    color: #0190DF;
+}
+.form .register{
+    display: none;
+}

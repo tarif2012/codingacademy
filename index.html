@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Website Assignment</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="header">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_3CIXby3tOb.json"
+                    background="transparent" speed="1" style="width: 200px; height: 150px; margin-top: 100px;" loop
+                    autoplay>
+                </lottie-player>
+                <h1>Learn<span class="highlight"> Coding</span> For Free!</h1>
+                <p>PAY ONLY WHEN YOU GET A &nbsp; JOB.</p>
+            </div>
+            <div class="col2">
+                <div class="login-form">
+                    <div class="form">
+                        <form class="login" onsubmit="return verify()">
+                            <h1
+                                style="font-size: 15px; font-weight: 400; padding-top: 12px; display: flex; justify-content: center;">
+                                Log In To Dashboard</h1>
+                            <br>
+                            <input id="email" type="email" placeholder="Your Email">
+                            <span class="error" id="userErrorMessage"></span>
+                            <br>
+                            <br>
+                            <input id="pass" type="text" id="password" placeholder="Enter Password">
+                            <span class="error1" id="userErrorMessage1"></span>
+                            <br>
+                            <br>
+                            <input type="text" id="confirmpassword" placeholder="Confirm Password">
+                            <br>
+                            <br>
+                            <input type="submit" value="Login" class="btn">
+                            <br>
+                            <br>
+                            <p class="message">Not a user?<a href="#"> Register Now</a></p>
+                        </form>
+                        <form class="register" action="" onsubmit="return verify">
+                            <h1
+                                style="font-size: 15px; font-weight: 400; padding-top: 12px; display: flex; justify-content: center;">
+                                Register to Coding Academy</h1>
+                            <br>
+                            <input type="text" placeholder="First Name">
+                            <br>
+                            <br>
+                            <input type="text" placeholder="Last Name">
+                            <br>
+                            <br>
+                            <input type="email" placeholder="Your Email">
+                            <br>
+                            <br>
+                            <input type="number" placeholder="Phone Number">
+                            <br>
+                            <br>
+                            <input type="submit" value="Login" class="btn1">
+                            <br>
+                            <br>
+                            <p class="message">Already a user?<a href="#"> Login here</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function verify() {
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        if(email == '' || email == 'null'){
+            document.getElementById("email").focus();
+            document.getElementById("userErrorMessage").innerHTML ="Please Enter The Email";
+            return false;
+        }
+        if(pass == '' || pass == 'null'){
+            document.getElementById("pass").focus();
+            document.getElementById("userErrorMessage1").innerHTML ="Please Enter The Email";
+            return false;
+        }
+        pw1 = document.getElementById("password").value;
+        pw2 = document.getElementById("confirmpassword").value;
+        if (pw1 === pw2) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    }  </script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<script>
+    $('.message a').click(function () {
+        $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+    })
+</script>
+<footer>
+    <div class="bottom">
+        <h4 class="text">Copyright@2022 - CodingAcademy</h4>
+    </div>
+</footer>
+
+</html>
